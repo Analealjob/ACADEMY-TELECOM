@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <header>
         <div class="logo">
             <img src="./img/logo1.png" alt="Logo">
@@ -24,6 +25,24 @@
                 <li><a href="paginas/nossa_historia.html">Nossa Historia</a></li>
             </ul>
         </nav>
+        <form name="formCadastro" onsubmit="return validarFormulario()" method="post">
+            <label for="nome">Informe o seu Nome:</label>
+            <input type="text" name="nome">
+            <input type="submit" value="Enviar">
+        </form>
+        <script>
+            function validarFormulario(){
+                var nomePessoa = document.forms["formCadastro"]["nome"].value;
+                if (nomePessoa == "") {
+                    alert("Favor informar o seu nome!");
+                    return false;     
+                }
+                else{
+                    alert("Olá, " + nomePessoa + " !");
+                    return true;
+                }
+            }
+        </script>
     </header>
 
 
@@ -68,7 +87,18 @@
 
 
     </footer>
-
+    <script src="main.js"></script>
+    <div class="box-cookies hide container">
+        <div class="row">
+            <div class="col">
+                <p class="msg-cookies">
+                    Para melhorar sua experiência em nossa plataforma utilizamos cookies e ao aceitar você concorda com os termos e politicas de privacidade. Seus dados ficaram protegido,pois seguimos as diretrizes da LGBT.              </p>
+            </div>
+            <div class="col-auto">
+                <button class="btn-cookies button-primary">Eu aceito</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

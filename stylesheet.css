@@ -1,156 +1,23 @@
 /*formulario*/
 * {
-    box-sizing: border-box;
-}
-
-body * {
-    font-family: 'Fira Sans', sans-serif;
-    scroll-behavior: smooth;
-}
-
-html {
-    background-color: #2c0323
-}
-
-header {
-    background-color: #252323;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    max-width: 200%;  
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    z-index: 100;
-    padding: 1rem;
-  }
-  
-  .logo {
-    width: 25%;
-    padding: 1rem;
-  }
-
-  .logo img{
-    width: 50%;
-    padding: 1rem;
-  }
-
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin-right: 5rem;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-left: 15px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #f3ecef;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  
-  nav a:hover {
-    color:#2c0323
-  }
-  
-  main {
-    background-color: #2c0323;
-    width: 99%;
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: space-around;
-  }
-
-  .banner_home {
-    display: flex;
-    justify-content: center;
-    background-color: red #2c0323;
-    
-  }
-
-  .banner_home img {
-    padding: 20rem;
-    width: 100vw;
-    border-radius: 10rem;
-
-  }
-
-
-
-  footer {
-    display: flex;
-    background-color: #2c0323
-   
-  }
-
-  .flex-container {
-    flex-direction: row-reverse 
-   }
-     
-  .tamanho_redesocial { 
-    text-decoration: none;
-    color: #f3ecef;
-    font-weight: bold;
-    font-size:1 rem ;
-    width: auto;
-    height: 30px;
-  }
-
-  .informacoes {
-    font: size 24px; ;
-    font-weight: bold;
-    text-align: end;
-    color: #ffd5d5;
-    margin-top: 1 rem;
-    margin-bottom: 1 rem;
-  
-   }
- 
-  .container {
-    background-color:#2c0323;
-    height: 50vh;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 05px;
-    margin: 02px 0;
-    text-decoration: none;
-    color: #f3ecef;
-    font-weight: bold;
-    font-size: 1.2rem;
-
-}
-
-
-/*fale conosco*/
-* {
   box-sizing: border-box;
 }
 
 body * {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
 html {
-  background-color: #6b2486;
+  background-color: #2c0323;
 }
 
 header {
-  background-color: #2c1c52;
+  background-color: #252323;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position:fixed;
+  position: fixed;
   max-width: 200%;
   top: 0;
   left: 0;
@@ -165,11 +32,10 @@ header {
   padding: 1rem;
 }
 
-.logo img{
+.logo img {
   width: 50%;
   padding: 1rem;
 }
-
 
 nav ul {
   display: flex;
@@ -186,38 +52,161 @@ nav a {
   text-decoration: none;
   color: #f3ecef;
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: 1.2rem;
 }
 
+nav a:hover {
+  color: #2c0323;
+}
 
-.formularioContato { 
-  max-width:900px; 
-  height:auto; 
-  float:none; 
-  margin:auto; 
-  padding:1em; 
-  margin-bottom:1em; 
-  border-radius:16px; 
-  background:#332e61; 
-  box-shadow: 1px 0px 1.2px 0px #ccc; 
-  position: end ; 
+main {
+  background-color: #2c0323;
+  width: 99%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: space-around;
 }
-.formularioContato:before { 
-  width:0; 
-  height:0; 
-  border:15px solid transparent; 
-  border-bottom-color:#fff; 
-  content:""; 
-  position:absolute; 
-  left:6%; 
-  top:-4.5%; 
-  margin-top:-4px; 
-  margin-left:6px; 
-  z-index:2;
+
+.banner_home {
+  display: flex;
+  justify-content: center;
+  background-color: red #2c0323;
 }
-.formularioContato label  { 
-  float:left; 
-  width:100%; 
+
+.banner_home img {
+  padding: 20rem;
+  width: 100vw;
+  border-radius: 10rem;
+}
+
+footer {
+  display: flex;
+  background-color: #2c0323;
+}
+
+.flex-container {
+  flex-direction: row-reverse;
+}
+
+.tamanho_redesocial {
+  text-decoration: none;
+  color: #f3ecef;
+  font-weight: bold;
+  font-size: 1 rem;
+  width: auto;
+  height: 30px;
+}
+
+.informacoes {
+  font: size 24px;
+  font-weight: bold;
+  text-align: end;
+  color: #ffd5d5;
+  margin-top: 1 rem;
+  margin-bottom: 1 rem;
+}
+
+.container {
+  background-color: #2c0323;
+  height: 50vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 05px;
+  margin: 02px 0;
+  text-decoration: none;
+  color: #f3ecef;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*fale conosco*/
+* {
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Fira Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: #6b2486;
+}
+
+header {
+  background-color: #2c1c52;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  max-width: 200%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.logo {
+  width: 25%;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 50%;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 5rem;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f3ecef;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.formularioContato {
+  max-width: 900px;
+  height: auto;
+  float: none;
+  margin: auto;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 16px;
+  background: #332e61;
+  box-shadow: 1px 0px 1.2px 0px #ccc;
+  position: end;
+}
+.formularioContato:before {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom-color: #fff;
+  content: "";
+  position: absolute;
+  left: 6%;
+  top: -4.5%;
+  margin-top: -4px;
+  margin-left: 6px;
+  z-index: 2;
+}
+.formularioContato label {
+  float: left;
+  width: 100%;
   margin: bottom 1px;
 }
 .formularioContato label span {
@@ -225,54 +214,67 @@ nav a {
   float: left;
   color: white;
   margin-bottom: 7px;
-  font-family:'open_sansregular'; 
+  font-family: "open_sansregular";
 }
-.formularioContato label input  { 
-  font-size:1em; 
-  color:#555; 
-  font-family:'open_sansregular'; 
-  outline:none; 
-  border:1px #dee5ed solid; 
-  border-radius:4px; 
-  padding:0.6em; 
-  transition: 0.3s;  
+.formularioContato label input {
+  font-size: 1em;
+  color: #555;
+  font-family: "open_sansregular";
+  outline: none;
+  border: 1px #dee5ed solid;
+  border-radius: 4px;
+  padding: 0.6em;
+  transition: 0.3s;
 }
-.formularioContato label select { 
-  font-size:1em; 
-  color:#555; 
-  border:1px #dee5ed solid; 
-  border-radius:4px; 
-  padding:0.6em; 
-  outline:none; 
-  transition: 0.3s;  
+.formularioContato label select {
+  font-size: 1em;
+  color: #555;
+  border: 1px #dee5ed solid;
+  border-radius: 4px;
+  padding: 0.6em;
+  outline: none;
+  transition: 0.3s;
 }
-.formularioContato label textarea { 
-  font-size:1em; 
-  color:#555; 
-  border:1px #dee5ed solid; 
-  border-radius:4px; 
-  padding: 9em; 
-  outline:none;
-  transition: 0.3s;   
+.formularioContato label textarea {
+  font-size: 1em;
+  color: #555;
+  border: 1px #dee5ed solid;
+  border-radius: 4px;
+  padding: 9em;
+  outline: none;
+  transition: 0.3s;
 }
-.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:2px rgb(37,174,230) solid; color:rgb(37,174,230);}
-.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
-.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
-.formularioContato button.btn-envia { 
-  background-color:rgb(37,174,230); 
-  width:50%; display:block; 
-  margin:auto; cursor:pointer; 
-  border-radius:4px;  
-  border:0; 
-  padding:0.8em 0em; 
-  color:#fff; 
-  font-size:1.3em; 
-  font-family:'open_sansbold'; 
+.formularioContato label input:focus {
+  box-shadow: 0 0 5px 0px rgb(178, 216, 231);
+  border: 2px rgb(37, 174, 230) solid;
+  color: rgb(37, 174, 230);
+}
+.formularioContato label select:focus {
+  box-shadow: 0 0 5px 0px rgb(178, 216, 231);
+  border: 1px rgb(37, 174, 230) solid;
+}
+.formularioContato label textarea:focus {
+  box-shadow: 0 0 5px 0px rgb(178, 216, 231);
+  border: 1px rgb(37, 174, 230) solid;
+  color: rgb(37, 174, 230);
+}
+.formularioContato button.btn-envia {
+  background-color: rgb(37, 174, 230);
+  width: 50%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  padding: 0.8em 0em;
+  color: #fff;
+  font-size: 1.3em;
+  font-family: "open_sansbold";
   text-align: center;
-  transition: 0.3s;   
+  transition: 0.3s;
 }
-.formularioContato button.btn-envia:hover { 
-  background-color:#24154e; 
+.formularioContato button.btn-envia:hover {
+  background-color: #24154e;
 }
 /*contato*/
 
@@ -280,40 +282,98 @@ nav a {
   background-image: url(img/fundo_cursos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color:antiquewhite;
+  color: antiquewhite;
 }
 
-.centralizado{
- display:flex;
-justify-content: space-evenly;
-align-items: center;
-font-size: medium;
-  }
+.centralizado {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: medium;
+}
 
-  .section-glossario {
-    width: fit-content;
-    display: block; /* Necessário para o margin funcionar */
-    margin-left: auto; /* aqui */
-    margin-right: auto; /* e aqui */
-  }
-  
-  .institucional {
-    width:fit-content;
-    display: flex; /* Necessário para o margin funcionar */
-    margin-left: auto; /* aqui */
-    margin-right: auto; /* e aqui */
-  }
-  
-  .formularioContato {
-      width: 50%;
-      margin-top: 7%;
-      display: flex; /* Necessário para o margin funcionar */
-      margin-left: auto; /* aqui */
-      margin-right: auto; /* e aqui */
-    }
-    
-    @media screen and (max-width: 1000px){
-      flex-direction:column;
+.section-glossario {
+  width: fit-content;
+  display: block; /* Necessário para o margin funcionar */
+  margin-left: auto; /* aqui */
+  margin-right: auto; /* e aqui */
+}
 
-    }
-   
+.institucional {
+  width: fit-content;
+  display: flex; /* Necessário para o margin funcionar */
+  margin-left: auto; /* aqui */
+  margin-right: auto; /* e aqui */
+}
+
+.formularioContato {
+  width: 50%;
+  margin-top: 7%;
+  display: flex; /* Necessário para o margin funcionar */
+  margin-left: auto; /* aqui */
+  margin-right: auto; /* e aqui */
+}
+
+@media screen and (max-width: 1000px) {
+  flex-direction: column;
+}
+
+/* ALERTA DE COOKIES */
+.box-cookies.hide {
+  display: none !important;
+}
+
+.box-cookies {
+  position: fixed;
+  background: rgba(14, 23, 39, 0.8);
+  width: 100%;
+  max-width: 980px;
+  z-index: 998;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px 0px 0px 0px;
+  border: dashed 3px rgba(255, 255, 255, 0.6);
+  border-bottom: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-cookies a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.box-cookies a:hover {
+  text-decoration: underline;
+}
+
+.msg-cookies,
+.box-cookies .btn-cookies {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.box-cookies .btn-cookies {
+  cursor: pointer;
+  height: auto;
+  margin: 11px 10px 10px;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.msg-cookies {
+  padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .box-cookies {
+    flex-direction: column;
+    border-left: none;
+  }
+}

@@ -10,23 +10,23 @@ let unir = textoA + textoB
 console.log(unir)
 
 
-[ 
+const cursos= [ 
 
 
     {
         curso: "Especialista " ,
         professor: "Ana Leal",
-        turno: "Diurno", "Noturno",
-        carga: "360 "
-    }
+        turno: "Diurno", 
+        carga: "360 ",
+    },
     
     
     
     {
         curso: "Engenharia de Redes " ,
         professor: "Priscila do Prado",
-        turno: "Diurno", "Noturno",
-        carga: "360 "
+        turno: "Noturno",
+        carga: "360 ",
     }
     
 ]
@@ -37,6 +37,22 @@ function Especialista (professor, turno,carga) {
     this.carga =carga ;
 }
 
-const NovoCurso = new curso ( Inicianates , Priscila , Noturno) ;
+const NovoEspecialista = new Especialista ( "Inicianates" , "Priscila" , 360) ;
 curso.push (NovoCurso) ;
-console.log (curso) ;
+console.log (NovoEspecialista) ;
+
+
+(() => {
+    if (!localStorage.pureJavaScriptCookies) {
+        document.querySelector(".box-cookies").classList.remove('hide');
+    }
+
+    const acceptCookies = () => {
+        document.querySelector(".box-cookies").classList.add('hide');
+        localStorage.setItem("pureJavaScriptCookies", "accept");
+    };
+
+    const btnCookies = document.querySelector(".btn-cookies");
+
+    btnCookies.addEventListener('click', acceptCookies);
+})();
