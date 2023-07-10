@@ -1,16 +1,18 @@
 /*formulario*/
 * {
-  box-sizing: border-box;
-}
+  margin:0;
+  padding:0;
+  
+  }
 
 body * {
   font-family: "Fira Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
-html {
+/*html {
   background-color: #2c0323;
-}
+}*/
 
 header {
   background-color: #252323;
@@ -60,17 +62,18 @@ nav a:hover {
 }
 
 main {
-  background-color: #2c0323;
+  /*background-color: #2c0323;*/
   width: 99%;
-  margin-top: 8rem;
+  /*margin-top: 8rem;*/
   display: flex;
   flex-direction: space-around;
+  justify-content: center;
 }
 
 .banner_home {
   display: flex;
   justify-content: center;
-  background-color: red #2c0323;
+  /*background-color: red #2c0323;*/
 }
 
 .banner_home img {
@@ -79,10 +82,22 @@ main {
   border-radius: 10rem;
 }
 
-footer {
+footer{
+
+
+}
+
+/*footer {
   display: flex;
   background-color: #2c0323;
-}
+justify-items:center ;
+align-items: center;
+background-image: url("img/3d-render-modern-network-communications-background-with-plexus-design.jpg");
+position: fixed;
+width:100%;
+}*/
+
+
 
 .flex-container {
   flex-direction: row-reverse;
@@ -90,7 +105,7 @@ footer {
 
 .tamanho_redesocial {
   text-decoration: none;
-  color: #f3ecef;
+  color:#555;
   font-weight: bold;
   font-size: 1 rem;
   width: auto;
@@ -107,15 +122,15 @@ footer {
 }
 
 .container {
-  background-color: #2c0323;
+  /*background-color: #2c0323;*/
   height: 50vh;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 05px;
-  margin: 02px 0;
+  /*padding: 05px;
+  margin: 02px 0;*/
   text-decoration: none;
   color: #f3ecef;
   font-weight: bold;
@@ -130,11 +145,12 @@ footer {
 body * {
   font-family: "Fira Sans", sans-serif;
   scroll-behavior: smooth;
+  position: relative;
 }
 
-html {
+/*html {
   background-color: #6b2486;
-}
+}*/
 
 header {
   background-color: #2c1c52;
@@ -282,7 +298,7 @@ nav a {
   background-image: url(img/fundo_cursos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: antiquewhite;
+  color:white;
 }
 
 .centralizado {
@@ -314,9 +330,7 @@ nav a {
   margin-right: auto; /* e aqui */
 }
 
-@media screen and (max-width: 1000px) {
-  flex-direction: column;
-}
+
 
 /* ALERTA DE COOKIES */
 .box-cookies.hide {
@@ -371,9 +385,156 @@ nav a {
   padding: 8px;
 }
 
-@media screen and (max-width: 600px) {
-  .box-cookies {
-    flex-direction: column;
-    border-left: none;
-  }
+
+
+h3{
+  color:#2c0323;
 }
+
+.logo1 {
+  height:80px;
+  width:110px;
+}
+
+/*footer*/
+footer{
+  background-color:#24154e;
+  }
+
+  footer .rodape{
+display:flex;
+color:white;
+
+  }
+
+  footer .rodape ul  {
+width:25%;
+list-style: none;
+  }
+
+  footer .rodape h3 {
+margin-bottom: 16px;
+font-weight:600;
+color:white;
+  }
+
+  footer .rodape .redes-sociais img {
+margin-right:10px;
+
+  }
+
+  footer .rodape ul > p {
+    margin-bottom:40px ;
+
+  }
+
+  footer .rodape li {
+    margin: 10px 0;
+  }
+
+  footer .rodape a {
+color:white;
+
+  }
+/*end footer*/
+
+.cursos .cursos1 {
+display:flex;
+justify-content: space-between;
+margin:30px auto;
+}
+
+.cursos .card{
+width:30%;
+cursor:pointer;
+padding:30px;
+border-radius:15px;
+/*background:#332e61;*/
+transition:0.3s ; 
+}
+.cursos .card img{
+  width:280px;
+
+}
+
+.cursos .card:hover {
+  background:rgb(123, 84, 160);
+  box-shadow:0px 10px 67px 8px #332e61;
+}
+
+.cursos .card .titulo {
+  margin: 13px 0;
+  font-weight: 600;
+  color:black;
+  }
+
+  .cursos .card p {
+    color:black;
+  }
+
+  /*section newsletter */
+
+  .newsletter {
+    margin-top:15px;
+    background-color: #332e61;
+  }
+ 
+  
+  .newsletter .box {
+    margin: 13px 0;
+  }
+  .newsletter .box{
+ text-align: center;
+ padding:100px;
+ background-image:url('./img/3d-render-modern-network-communications-background-with-plexus-design.jpg');
+ background-repeat:no repeat;
+ background-size: cover;
+ background-position: center;
+  border-radius: 15px;
+  }
+
+  .newsletter .box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline:none;
+    color:#2c1c52;
+    background-color:rgb(130, 120, 148);
+  }
+
+  .newsletter .box button {
+    font-size:15px;
+    border:none;
+    outline:none;
+   padding:15px;
+   border-radius:14px;
+   color: white;
+   background-color:mediumpurple;
+   cursor:pointer;
+
+  }
+
+/*
+@media screen and (min-width:200px) and (max-width:768px)  {
+  header{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background-color: green;
+  }
+
+  ul li a {
+    width:100px;
+    height:auto;
+  }
+
+  img {
+    max-width: 400px;
+    min-width: 70px;
+  }
+ 
+
+
+}*/
+

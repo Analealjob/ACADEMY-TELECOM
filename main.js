@@ -10,6 +10,20 @@ let unir = textoA + textoB
 console.log(unir)
 
 
+            function validarFormulario(){
+                var nomePessoa = document.forms["formCadastro"]["nome"].value;
+                if (nomePessoa == "") {
+                    alert("Favor informar o seu nome!");
+                    return false;     
+                }
+                else{
+                    alert("Olá, " + nomePessoa + " !");
+                    return true;
+                }
+            }
+  
+
+
 const cursos= [ 
 
 
@@ -37,7 +51,7 @@ function Especialista (professor, turno,carga) {
     this.carga =carga ;
 }
 
-const NovoEspecialista = new Especialista ( "Inicianates" , "Priscila" , 360) ;
+const NovoEspecialista = new Especialista ( "Iniciantes" , "Priscila" , 360) ;
 curso.push (NovoCurso) ;
 console.log (NovoEspecialista) ;
 
