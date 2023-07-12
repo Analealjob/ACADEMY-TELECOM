@@ -1,150 +1,180 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon 50 px.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <title>Home</title>
 </head>
 
 <body>
-    
-    <header>
-                <img class="logo1" src="./img/logo1.png" alt="Logo">
-      
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="paginas/fale_conosco.html">Fale Conosco</a></li>
-                <li><a href="paginas/cursos.html">Cursos</a></li>
-                <li><a href="paginas/glossario.html">Glossário</a></li>
-                <li><a href="paginas/nossa_historia.html">Nossa História</a></li>
-            </ul>
-        </nav>
-        <form name="formCadastro" onsubmit="return validarFormulario()" >
-            <label for="nome">Informe o seu Nome:</label>
-            <input type="text" name="nome">
-            <input type="submit" value="Enviar">
-        </form>
-        
-    </header>
+
+    <div class="background-azul">
 
 
-    <main>
-        <section class="section-banner">
-            <div class="banner">
-                <img src="./img/banner_home.png" alt="logo">
+        <header>
+
+
+            <img class="logo1" src="../img/logo1.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/paginas/cursos.html">Cursos</li>
+                    <li><a href="/paginas/glossario.html">Glossário</a></li>
+                    <li><a href="/paginas/nossa_historia.html">Nossa Historia</a></li>
+                    <li><a href="/paginas/fale_conosco.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+
+            <div class="nome">
+                <form name="formCadastro" onsubmit="return validarFormulario()">
+                    <label for="nome">Informe o seu Nome:</label>
+                    <input type="text" name="nome">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </header>
+
+
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h1>ACADEMY TELECOM</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie est sit amet libero
+                        commodo, non vestibulum est facilisis. Donec ut dui leo.</p>
+                    <a href="paginas/fale_conosco.html" class="btn animate-btn">Fale Conosco</a>
+                </div>
+                <br>
+                <div class="card card1">
+                    <h5>Futuro</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque mi,
+                        suscipit et sodales quis, tempor mollis sapien.
+                        Vivamus et orci nisl. </p>
+
+                </div>
+
+                <div class="card card2">
+                    <h5>Conectividade</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque mi,
+                        suscipit et sodales quis, tempor mollis sapien.
+                        Vivamus et orci nisl. </p>
+
+                </div>
+
+                <div class="card card3">
+                    <h5>Inovação</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque mi,
+                        suscipit et sodales quis, tempor mollis sapien.
+                        Vivamus et orci nisl. </p>
+
+                </div>
+
+                <div class="card card5">
+                    <h5>Sustentabilidade</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum neque mi,
+                        suscipit et sodales quis, tempor mollis sapien. Vivamus et orci nisl. </p>
+
+                </div>
+
+
             </div>
         </section>
-    </main>
+    </div>
 
     <section class="newsletter">
-        <div class ="container">
-        <div class ="box">
-            <h2>Cadastre-se para receber a nossa newsletter</h2>
-            <p>Receba conteúdos, novidades e dicas importantes.</p>
-            <form>
-                <input type ="email" placeholder =" Digite seu email">
-<button> Enviar </button>
-            </form> 
+        <div class="recebeanewsletter">
+            <div class="box-newsletter">
+                <h2>Assine a nossa newsletter!</h2>
+                <p>Receba novidades, dicas e conteúdo importantes.</p>
+                <form>
+                    <input type="email" placeholder="Digite seu email">
+                    <button>Enviar</button>
+                </form>
+            </div>
         </div>
-
     </section>
 
 
-    <footer>                    
-            <div class="rodape">
-        <ul>
-         <h3>Academy Telecom</h3>
-         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis odio sapien, vitae efficitur lectus blandit at. Pellentesque vehicula maximus scelerisque. Fusce facilisis erat a erat convallis aliquet. Etiam sem tellus, lobortis non fringilla non, suscipit ac enim. Praesent blandit sodales eleifend. 
-         </p>
-        
-<div class = "redes-sociais">
-    <h3>Siga as nossas Redes Sociais!</h3>
-            <a href="https://www.linkedin.com/">
-            <img class="tamanho_redesocial" src="./img/Linkedin bco.png" alt="linkedin"> </a>
-        <a href="https://www.twitter.com/">
-            <img class="tamanho_redesocial" src="./img/twitter.png" alt="twitter"> </a>
-        <a href="https://www.facebook.com/">
-            <img class="tamanho_redesocial" src="./img/facebook-bco.png" alt="facebook"> </a>
-        <a href="https://www.instagram.com/">
-            <img class="tamanho_redesocial" src="./img/instagram-branco.png" alt="instagram"> </a>
 
-    </div>
-    </ul>
-<!--end ul1-->
-                 
-      <ul> <!--ul2-->
-            <h3>Suporte</h3>
-            <li> <a href="#">FAQ</a> </li>
-            <li> <a href="#">Como funciona</a> </li>
-            <li> <a href="#">Características</a> </li>
-            <li> <a href="#">Comunicando</a> </li>
-     </ul> <!--end ul2-->
+    <footer>
+        <div class="container">
+            <ul>
+                <h3>Academy Telecom</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
 
-     <ul> <!--ul2-->
-        <h3>Parcerias e Negócios</h3>
-        <li> <a href="#">Ambiente de Inovação</a> </li>
-        <li> <a href="#">Empreendedorismo</a> </li>
-        <li> <a href="#">Parcerias</a> </li>
-        <li> <a href="#">Estágios</a> </li>
- </ul> <!--end ul2-->
+                <div class="redesocial">
+                    <h4>Siga as nossas redes Sociais!</h4>
+                    <img src="img/facebook-bco.png" alt="Facebook">
+                    <img src="img/instagram-branco.png" alt="Instagram">
+                    <img src="img/Linkedin bco.png" alt="Linkedin">
+                    <img src="img/twitter.png" alt="twitter">
+                </div>
+            </ul>
+            <ul>
+                <h3>Suporte</h3>
+                <li> <a href="#">FAQ</a></li>
+                <li> <a href="#">Como Funciona</a></li>
+                <li> <a href="#">Caracteristicas</a></li>
+                <li> <a href="#">Comunicando</a></li>
+            </ul>
+            <ul>
+                <h3>Veja também</h3>
+                <li> <a href="#">Your way</a></li>
+                <li> <a href="#">Iniciação Científica</a></li>
+                <li> <a href="#">Materiais Gratuitos</a></li>
+                <li> <a href="#">Blog</a></li>
+            </ul>
 
-     <ul> <!-- ul3-->
-        <h3>Administração Central</h3> 
-        <li>
-        <p>Endereço:Rua Exemplo, 123</p>   
-        </li>    
-        <li>        
-        <p>Telefone: +55 11 1234-5678</p>
-        </li>
-     <li>
-        <p>Email:contato@exemplo.com</p> 
-     </li>
-  <li>
-        <p> Horário de funcionamento:Seg. a Sex. das 08h às 17h</p>  
-        </li>
-  </ul> <!--end ul3-->
-      
-      <!--<div class="container">
-          
-        <h1>Contato</h1>
-        <p>Endereço:Rua Exemplo, 123</p>
-        <p>Telefone:(11) 1234-5678</p>
-        <p>Email:contato@exemplo.com</p>   -->  
-               
+            <ul>
+                <h3>Parcerias e Negócios</h3>
+                <li> <a href="#">Ambiente de Inovação</a> </li>
+                <li> <a href="#">Empreendedorismo</a> </li>
+                <li> <a href="#">Parcerias</a> </li>
+                <li> <a href="#">Estágios</a> </li>
+            </ul>
+            <ul>
+                <h3>Administração Central</h3>
+                <li>
+                    <p> telefone: 55 11 1234-5678 </p>
+                </li>
+                <li>
+                    <p> email: contato@academytelecom.com </p>
+                </li>
+                <li>
+                    <p> Brasil</p>
+                </li>
+            </ul>
+        </div>
     </footer>
+    </div>
 
 
-    <script src="main.js"></script>
+
     <div class="box-cookies hide container">
         <div class="row">
             <div class="col">
                 <p class="msg-cookies">
-                    Para melhorar sua experiência em nossa plataforma utilizamos cookies e ao aceitar você concorda com os termos e politicas de privacidade. Seus dados ficaram protegido,pois seguimos as diretrizes da LGBT.              </p>
+                    Para melhorar sua experiência em nossa plataforma utilizamos cookies e ao aceitar você concorda com
+                    os termos e politicas de privacidade. Seus dados ficaram protegido,pois seguimos as diretrizes da
+                    LGPD. </p>
             </div>
             <div class="col-auto">
                 <button class="btn-cookies button-primary">Eu aceito</button>
             </div>
+
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
 </body>
 
+
+
+
+
 </html>
-
- 
-
-    <!--<div class="coluna-contato">
-            <h3>NOSSAS REDES</h3>
-            <a href="https://www.linkedin.com/">
-                <img class="tamanho_redesocial" src="./img/Linkedin bco.png" alt="linkedin"> </a>
-            <a href="https://www.twitter.com/">
-                <img class="tamanho_redesocial" src="./img/twitter.png" alt="twitter"> </a>
-            <a href="https://www.facebook.com/">
-                <img class="tamanho_redesocial" src="./img/facebook-bco.png" alt="facebook"> </a>
-            <a href="https://www.instagram.com/">
-                <img class="tamanho_redesocial" src="./img/instagram-branco.png" alt="instagram"> </a>
-        </div>-->

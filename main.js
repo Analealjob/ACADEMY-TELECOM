@@ -1,13 +1,4 @@
-let textoA = "OLÁ MUNDO";   
-
-let textoB = "SOMOS A ACADEMY TELECOM";
-
-let frase1 = textoA +"SEJA BEM VINDO" + textoB;
-
-let unir = textoA + textoB 
-
-
-console.log(unir)
+//import Swal from 'sweetalert2'
 
 
             function validarFormulario(){
@@ -51,13 +42,15 @@ function Especialista (professor, turno,carga) {
     this.carga =carga ;
 }
 
-const NovoEspecialista = new Especialista ( "Iniciantes" , "Priscila" , 360) ;
-curso.push (NovoCurso) ;
-console.log (NovoEspecialista) ;
+const NovoEspecialista = new Especialista( "Iniciantes" , "Priscila" , 360) ;
+//curso.push(NovoCurso) ;
+console.log(NovoEspecialista) ;
 
 
-(() => {
-    if (!localStorage.pureJavaScriptCookies) {
+
+//(() => {
+   console.log('oi') 
+   if (!localStorage.getItem("pureJavaScriptCookies"))   {
         document.querySelector(".box-cookies").classList.remove('hide');
     }
 
@@ -67,6 +60,35 @@ console.log (NovoEspecialista) ;
     };
 
     const btnCookies = document.querySelector(".btn-cookies");
-
+if (btnCookies)
     btnCookies.addEventListener('click', acceptCookies);
-})();
+//})();
+
+Swal.fire({
+    title: '',
+    text: '',
+    imageUrl: './img/banner_home.png',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+
+
+  const btnalerta = document.querySelector("#alerta");
+  btnalerta.addEventListener('click', () => {
+    
+        console.log('Enviado com Sucesso')
+        Swal.fire({
+        title: '',
+        text: '',
+        imageUrl: './img/banner_home.png',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Enviado com Sucesso',
+      })
+
+   } )
+  
+
+ 
+
