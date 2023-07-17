@@ -1,94 +1,103 @@
-//import Swal from 'sweetalert2'
 
 
-            function validarFormulario(){
-                var nomePessoa = document.forms["formCadastro"]["nome"].value;
-                if (nomePessoa == "") {
-                    alert("Favor informar o seu nome!");
-                    return false;     
-                }
-                else{
-                    alert("Olá, " + nomePessoa + " !");
-                    return true;
-                }
-            }
-  
+function validarFormulario() {
+    var nomePessoa = document.forms["formCadastro"]["nome"].value;
+    if (nomePessoa == "") {
+        alert("Favor informar o seu nome!");
+        return false;
+    }
+    else {
+        alert("Olá, " + nomePessoa + " !");
+        return true;
+    }
+}
 
 
-const cursos= [ 
+
+const cursos = [
 
 
     {
-        curso: "Especialista " ,
+        curso: "Especialista ",
         professor: "Ana Leal",
-        turno: "Diurno", 
+        turno: "Diurno",
         carga: "360 ",
     },
-    
-    
-    
+
+
+
     {
-        curso: "Engenharia de Redes " ,
+        curso: "Engenharia de Redes ",
         professor: "Priscila do Prado",
         turno: "Noturno",
         carga: "360 ",
     }
-    
+
 ]
 
-function Especialista (professor, turno,carga) {
-    this.professor = professor ;
-    this.turno = turno ;
-    this.carga =carga ;
+function Especialista(professor, turno, carga) {
+    this.professor = professor;
+    this.turno = turno;
+    this.carga = carga;
 }
 
-const NovoEspecialista = new Especialista( "Iniciantes" , "Priscila" , 360) ;
+const NovoEspecialista = new Especialista("Iniciantes", "Priscila", 360);
 //curso.push(NovoCurso) ;
-console.log(NovoEspecialista) ;
+console.log(NovoEspecialista);
 
 
 
 //(() => {
-   console.log('oi') 
-   if (!localStorage.getItem("pureJavaScriptCookies"))   {
-        document.querySelector(".box-cookies").classList.remove('hide');
-    }
+console.log('oi')
+if (!localStorage.getItem("pureJavaScriptCookies")) {
+    document.querySelector(".box-cookies").classList.remove('hide');
+}
 
-    const acceptCookies = () => {
-        document.querySelector(".box-cookies").classList.add('hide');
-        localStorage.setItem("pureJavaScriptCookies", "accept");
-    };
+const acceptCookies = () => {
+    document.querySelector(".box-cookies").classList.add('hide');
+    localStorage.setItem("pureJavaScriptCookies", "accept");
+};
 
-    const btnCookies = document.querySelector(".btn-cookies");
+const btnCookies = document.querySelector(".btn-cookies");
 if (btnCookies)
     btnCookies.addEventListener('click', acceptCookies);
 //})();
 
-Swal.fire({
-    title: '',
-    text: '',
-    imageUrl: './img/banner_home.png',
-    imageWidth: 400,
+// Swal.fire({
+    //title: '',
+    //text: '',
+    //imageUrl: './img/banner_home.png',
+   //// imageWidth: 400,
     imageHeight: 200,
-    imageAlt: 'Custom image',
-  })
+   // imageAlt: 'Custom image',
+//})
 
-
-  const btnalerta = document.querySelector("#alerta");
-  btnalerta.addEventListener('click', () => {
-    
-        console.log('Enviado com Sucesso')
-        Swal.fire({
-        title: '',
-        text: '',
-        imageUrl: './img/banner_home.png',
-        imageWidth: 400,
-        imageHeight: 200,
-        imageAlt: 'Enviado com Sucesso',
-      })
-
-   } )
-  
 
  
+    // Função para validar e processar o formulário
+    function enviarMensagem() {
+        // Captura dos valores dos campos
+        const nome = document.querySelector('input[type="text"][placeholder="Nome"]').value;
+        const email = document.querySelector('input[type="email"][placeholder="Email"]').value;
+        const assunto = document.querySelector('select[name="Assunto"]').value;
+        const mensagem = document.querySelector('textarea[placeholder="Sua mensagem"]').value;
 
+        // Verifica se os campos estão preenchidos
+        if (nome === '' || email === '' || assunto === '' || mensagem === '') {
+            alert('Por favor, preencha todos os campos.');
+        } else {
+            alert('Mensagem enviada com sucesso!');
+
+
+        }
+    }
+
+// Event listener para o botão de submit
+const submitButton = document.getElementById('alerta');
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault(); // Evita que o formulário seja enviado diretamente (recarregar a página).
+    enviarMensagem();
+});
+
+
+    

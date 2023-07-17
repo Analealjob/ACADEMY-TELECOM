@@ -26,7 +26,7 @@ background-color:white;
   }
 
   h3{
-    font-size: 50px;
+    font-size: 20px;
   }
 
   p{
@@ -43,7 +43,7 @@ cursor:pointer;
 display:inline-block;
   }
 
-  .btn:hoover {
+  .btn :hover {
     background-color:#555;
   }
 
@@ -207,9 +207,9 @@ color:white;
 
   }
 
-  h4 {
-   font-weight: 200px; 
-  }
+  /*h4 {
+   font-weight: 200px;
+  }*/
  
 
 /*end footer*/
@@ -355,8 +355,7 @@ body * {
    left: 0;
    right: 0;
    height: 80px;
-   z-index: 100;
-   padding: 1rem;
+      padding: 1rem;
  }*/
  
  .logo {
@@ -484,10 +483,15 @@ body * {
  }
  
  .section-glossario {
+  color:white;
    width: fit-content;
    display: block; /* Necessário para o margin funcionar */
    margin-left: auto; /* aqui */
    margin-right: auto; /* e aqui */
+ }
+
+ .glossario {
+  color:white;
  }
  
  .institucional {
@@ -588,8 +592,8 @@ body * {
    }
  
    footer .container h3 {
- margin-bottom: 16px;
- font-weight:80px;
+ margin-bottom:16px;
+ font-weight: 80;
  color:white;
    }
  
@@ -673,7 +677,7 @@ body * {
   text-align: center;
   padding:100px;
   background-image:url('./img/3d-render-modern-network-communications-background-with-plexus-design.jpg');
-  background-repeat:no repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
    border-radius: 15px;
@@ -793,26 +797,142 @@ border:none;
 
 
  /*pagina home responsivo*/
-@media screen and (min-width:200px) and (max-width:768px)  {
-  header{
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    background-color: green;
-  }
+@media screen and (min-width:250px) and (max-width:768px)  {
+ /* max width = tela menores que alguma resolução*/
 
-  ul li a {
-    width:100px;
-    height:auto;
-  }
-
-  img {
-    max-width: 400px;
-    min-width: 70px;
+     .row {
+    flex-direction: column;
   }
  
-  .footer .container {
-   flex-direction: column;
- }
+ 
+.newsletter .box-newsletter h2 {
+  font-size: 2rem;
+}
 
+.newsletter .box-newsletter input {
+  width:90%;
+
+}
+
+.newsletter .box-newsletter{
+  padding:50px ;
+  background: blue;
+}
+
+.newsletter .box-newsletter button {
+  width: 50%;
+  margin-top: 20px;
+}
+}
+
+/*pagina fale conosco responsivo*/
+.sobre .container {
+  flex-direction: column-reverse;
+}
+
+.sobre .institucional
+.sobre .sobre-text {
+width: 100%;
+background: blue;
+}
+
+.sobre .sobre-text {
+  margin-top: 40px;
+}
+
+  /* Media query for screens with a maximum width of 768px (e.g., tablets) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo1 {
+    margin: 10px 0;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .newsletter .box-newsletter {
+    padding: 50px;
+  }
+
+  .newsletter .box-newsletter h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter .box-newsletter input {
+    width: 90%;
+  }
+
+  .newsletter .box-newsletter button {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  /* Add more responsive styles for other elements as needed */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo1 {
+    margin: 10px 0;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .contato-info {
+    flex-direction: column;
+  }
+
+  .right-side input,
+  .right-side textarea {
+    width: 100%;
+  }
+
+  .right-side button {
+    width: 100%;
+  }
+
+  /* Add more responsive styles for other elements as needed */
+}
+
+/* Media query for screens with a maximum width of 480px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  /* Add more responsive styles for other elements as needed */
 }
