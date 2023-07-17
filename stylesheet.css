@@ -924,7 +924,7 @@ background: blue;
 }
 
 /* Media query for screens with a maximum width of 480px (e.g., smartphones) */
-@media screen and (max-width: 480px) {
+@media screen and  (min-width: 250px) and (max-width: 480px) {
   .container {
     padding: 10px;
   }
@@ -934,5 +934,8 @@ background: blue;
     width: 100%;
   }
 
+  .footer .container {
+    flex-direction: column;
+  }
   /* Add more responsive styles for other elements as needed */
 }

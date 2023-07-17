@@ -63,14 +63,14 @@ if (btnCookies)
     btnCookies.addEventListener('click', acceptCookies);
 //})();
 
-// Swal.fire({
-    //title: '',
-    //text: '',
-    //imageUrl: './img/banner_home.png',
-   //// imageWidth: 400,
+Swal.fire({
+    title: '',
+    text: '',
+    imageUrl: './img/banner_home.png',
+    imageWidth: 400,
     imageHeight: 200,
-   // imageAlt: 'Custom image',
-//})
+   imageAlt: 'Custom image',
+})
 
 
  
