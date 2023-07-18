@@ -80,7 +80,8 @@ h5 {
   padding: 15px 25px;
   cursor: pointer;
   margin: 10px 15px;
-  background-color: #332e61;
+  background-position: center;
+  background-size: cover;
 
 }
 
