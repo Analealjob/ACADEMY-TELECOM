@@ -48,7 +48,6 @@ console.log(NovoEspecialista);
 
 
 //(() => {
-console.log('oi')
 if (!localStorage.getItem("pureJavaScriptCookies")) {
     document.querySelector(".box-cookies").classList.remove('hide');
 }
@@ -63,14 +62,14 @@ if (btnCookies)
     btnCookies.addEventListener('click', acceptCookies);
 //})();
 
-Swal.fire({
-    title: '',
-    text: '',
-    imageUrl: './img/banner_home.png',
-    imageWidth: 400,
-    imageHeight: 200,
-   imageAlt: 'Custom image',
-})
+// Swal.fire({
+   // title: '',
+    //text: '',
+    //imageUrl: './img/banner_home.png',
+    //imageWidth: 400,
+   // imageHeight: 200,
+   //imageAlt: 'Custom image',
+//})//
 
 
  
@@ -93,11 +92,21 @@ Swal.fire({
     }
 
 // Event listener para o botão de submit
-const submitButton = document.getElementById('alerta');
-submitButton.addEventListener('click', function (event) {
-    event.preventDefault(); // Evita que o formulário seja enviado diretamente (recarregar a página).
-    enviarMensagem();
-});
+//const submitButton = document.getElementById('alerta');
+//submitButton.addEventListener('click', function (event) {
+   // event.preventDefault(); // Evita que o formulário seja enviado diretamente (recarregar a página).
+    //enviarMensagem();
+//});
 
+// mensagem bem-vindo popup
 
+            let popUp = document.getElementById("popUp");
+            document.onmouseleave = function () {
+                popUp.style.display = "block";
+            }
+
+            function closeModel() {
+                popUp.style.display = "none";
+            }
+    
     
