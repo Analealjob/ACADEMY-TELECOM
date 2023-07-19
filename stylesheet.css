@@ -21,7 +21,7 @@ body {
 
 
 section {
-  padding: 200px;
+  padding: 30px;
   background-color: white;
 
 }
@@ -838,42 +838,40 @@ footer .container a {
 }
 
 
-
-/*pagina home responsivo*/
-@media screen and (min-width:250px) and (max-width:768px) {
+/*pagina home responsivo*/ /* Media query for screens with a maximum width of 768px (e.g., tablets) */
+@media screen and (min-width: 200px) and (max-width: 768px) {
   /* max width = tela menores que alguma resolução*/
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 
   .row {
     flex-direction: column;
   }
 
-
   .newsletter .box-newsletter h2 {
     font-size: 2rem;
+    justify-self: center;
   }
 
   .newsletter .box-newsletter input {
     width: 90%;
-
   }
 
   .newsletter .box-newsletter {
     padding: 50px;
     background: blue;
+    justify-self: center;
   }
 
   .newsletter .box-newsletter button {
     width: 50%;
     margin-top: 20px;
-  }
-}
-
-
-/* Media query for screens with a maximum width of 768px (e.g., tablets) */
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
+    justify-self: center;
   }
 
   .logo1 {
@@ -894,6 +892,7 @@ footer .container a {
 
   .newsletter .box-newsletter {
     padding: 50px;
+    width: 300px;
   }
 
   .newsletter .box-newsletter h2 {
@@ -909,51 +908,6 @@ footer .container a {
     margin-top: 20px;
   }
 
-  /* Add more responsive styles for other elements as needed */
-}
-
-
-
-@media screen and (max-width: 768px) {
-  ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo1 {
-    margin: 10px 0;
-  }
-
-  nav {
-    margin-top: 10px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .card {
-    margin-bottom: 20px;
-  }
-
-  .contato-info {
-    flex-direction: column;
-  }
-
-  .right-side input,
-  .right-side textarea {
-    width: 100%;
-  }
-
-  .right-side button {
-    width: 100%;
-  }
-
-  /* Add more responsive styles for other elements as needed */
-}
-
-/* Media query for screens with a maximum width of 768px (e.g., smartphones) */
-@media screen and (max-width: 768px) {
   .container {
     padding: 10px;
   }
@@ -964,12 +918,18 @@ footer .container a {
   }
 
   footer .container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   footer .container ul {
     width: 100%;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   /* pagina Nossa historia responsivo */
@@ -985,11 +945,4 @@ footer .container a {
   .sobre .sobre-text {
     margin-top: 40px;
   }
-
-  /*pagina nossos serviços responsivo */
-
-
 }
-
-
-/* Add more responsive styles for other elements as needed */

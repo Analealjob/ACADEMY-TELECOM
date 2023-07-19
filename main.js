@@ -110,3 +110,24 @@ if (btnCookies)
             }
     
     
+            function salvarEmail() {
+                const emailInput = document.getElementById('emailInput');
+                const email = emailInput.value;
+            
+                if (email.trim() !== '') {
+                    // Armazenar o e-mail no localStorage
+                    localStorage.setItem('emailUsuario', email);
+                    alert('E-mail cadastrado com sucesso!');
+                } else {
+                    alert('Por favor, digite um e-mail válido.');
+                }
+            }
+            
+            // Recuperar o e-mail do localStorage e preencher o campo de e-mail, se estiver disponível
+            window.onload = function() {
+                const email = localStorage.getItem('emailUsuario');
+                if (email) {
+                    const emailInput = document.getElementById('emailInput');
+                    emailInput.value = email;
+                }
+            };
